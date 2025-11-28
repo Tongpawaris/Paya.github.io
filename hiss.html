@@ -17,7 +17,7 @@
       button3{background: linear-gradient(red,white);color: blue;}
       button4{background: linear-gradient(purple,yellow);color: blue;}
     header{background: radial-gradient(lightpink,skyblue,white);padding:30px;text-align:center;border-radius: 15px;}
-      section{background:linear-gradient(yellow,limegreen,white);
+      section{background:linear-gradient(limegreen,yellow,white);
               padding:15px;
               margin: 20px auto;
               width: 70%;
@@ -25,6 +25,16 @@
       p{text-indent:2em;}
       
       .zoom:hover{transform: scale(1.5); cursor:pointer;}
+
+      img:hover{animation:glowcolors 1.2s infinite alternate;}
+      @keyframes glowcolors{
+        0% {box-shadow: 0 0 20px hotpink;}
+        25% {box-shadow: 0 0 20px skyblue;}
+        50% {box-shadow: 0 0 20px gold;}
+        75% {box-shadow: 0 0 20px darkviolet;}
+        100% {box-shadow: 0 0 20px red;}
+      }
+      
     </style>
   </head>
   <body background="https://images.wallpaperscraft.com/image/single/football_field_lawn_gate_115238_1920x1080.jpg">
