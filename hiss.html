@@ -17,7 +17,7 @@
       button3{background: linear-gradient(red,white);color: blue;}
       button4{background: linear-gradient(purple,yellow);color: blue;}
     header{background: radial-gradient(lightpink,skyblue,white);padding:30px;text-align:center;border-radius: 15px;}
-      section{background:linear-gradient(limegreen,yellow,white);
+      section{background:linear-gradient(yellow,limegreen,white);
               padding:15px;
               margin: 20px auto;
               width: 70%;
@@ -33,6 +33,15 @@
         50% {box-shadow: 0 0 20px gold;}
         75% {box-shadow: 0 0 20px darkviolet;}
         100% {box-shadow: 0 0 20px red;}
+      }
+
+      .blink-bg{
+        animation: blinkbg 1s infinite alternate;
+        padding: 3px 6px;
+      }
+      @keyframes blinkbg {
+        0% {background: yellow;}
+        100% {background: orange;}
       }
       
     </style>
